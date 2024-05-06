@@ -268,7 +268,7 @@ namespace Watermelon
             CoinsAmountText.text = GameController.CoinsCount.ToString();
             StoreCanvas.enabled = true;
 
-            if (AdsManager.IsForcedAdEnabled()) AdsManager.HideBanner();
+           
 
             PreviewImage.sprite = StoreController.GetSelectedProduct(CurrentProductType).PreviewSprite;
 
@@ -664,7 +664,7 @@ namespace Watermelon
         {
             GameAudioController.PlayButtonAudio();
 
-            AdsManager.ShowRewardBasedVideo((bool haveReward) =>
+            /*AdsManager.ShowRewardBasedVideo((bool haveReward) =>
              {
                  if (haveReward)
                  {
@@ -678,7 +678,7 @@ namespace Watermelon
                          GameController.CollectCoins(StoreController.Database.CoinsForAdsAmount);
                      });
                  }
-             });
+             });*/
         }
 
         public void CloseStoreButton()
@@ -742,13 +742,13 @@ namespace Watermelon
             OpenStore();
         }
 
-        private void Update()
+        /*private void Update()
         {
             if (StoreCanvas.enabled && (Time.realtimeSinceStartup < 12))
             {
                 AdsManager.HideBanner();
             }
-        }
+        }*/
 
         #endregion
     }

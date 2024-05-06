@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ddb41bf72d53a48a6bdc593d706f94, type: 3}
   m_Name: Ads Settings
   m_EditorClassIdentifier: 
-  bannerType: 1
-  interstitialType: 1
-  rewardedVideoType: 1
+  bannerType: 0
+  interstitialType: 0
+  rewardedVideoType: 0
   adMobContainer:
     androidBannerID: ca-app-pub-3940256099942544/6300978111
     iOSBannerID: ca-app-pub-3940256099942544/2934735716
@@ -44,7 +44,7 @@ MonoBehaviour:
   dummyContainer:
     bannerPosition: 0
   testMode: 0
-  systemLogs: 1
+  systemLogs: 0
   insterstitialFirstDelay: 40
   interstitialShowingDelay: 30
   isGDPREnabled: 0
