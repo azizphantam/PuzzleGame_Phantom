@@ -55,7 +55,7 @@ public class GameUIController : UICanvasAbstract
     public void SkipButton()
     {
         GameAudioController.PlayButtonAudio();
-
+        GameController.SkipLevel();
         /*AdsManager.ShowRewardBasedVideo((hasWatched) => 
         {
             if (hasWatched)
@@ -76,7 +76,7 @@ public class GameUIController : UICanvasAbstract
     public void NextLevelButton()
     {
         if (GameController.WinStage) return;
-        //GameController.SkipLevel();
+        GameController.SkipLevel();
         LevelController.DestroyLevel();
         GameController.NextLevel(false);
     }
