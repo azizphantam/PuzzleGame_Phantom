@@ -1,0 +1,17 @@
+v1.3.6
+Unity 2021 support
+Core update
+Bugfixes
+
+v1.2
+Store currency cloud
+Store adjustments (pages)
+Bugfixes
+
+v1.1
+Store
+Bugfixes
+Core update
+
+v1.0
+Base

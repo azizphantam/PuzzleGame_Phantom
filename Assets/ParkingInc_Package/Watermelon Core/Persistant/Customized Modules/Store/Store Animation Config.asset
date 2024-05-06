@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82542f103dacf704994f5be05e81da8d, type: 3}
+  m_Name: Store Animation Config
+  m_EditorClassIdentifier: 
+  circleScale:
+  - delay: 0
+    duration: 0.5
+    ease: 2
+    minValue: {x: 0, y: 0, z: 0}
+    maxValue: {x: 1, y: 1, z: 1}
+  circleColor:
+  - delay: 0.2
+    duration: 0.3
+    ease: 0
+    minValue: {r: 1, g: 1, b: 1, a: 1}
+    maxValue: {r: 0.33333334, g: 0.4901961, b: 0.73333335, a: 1}
+  circleScaleBack:
+  - delay: 0.2
+    duration: 0.5
+    ease: 10
+    minValue: {x: 1, y: 1, z: 1}
+    maxValue: {x: 0, y: 0, z: 0}
+  circleColorBack:
+  - delay: 0.2
+    duration: 0.3
+    ease: 0
+    minValue: {r: 0.33333334, g: 0.4901961, b: 0.73333335, a: 1}
+    maxValue: {r: 1, g: 1, b: 1, a: 1}
+  panelPosition:
+  - delay: 0
+    duration: 0.5
+    ease: 14
+    minValue: {x: 0, y: -1600}
+    maxValue: {x: 0, y: 0}
+  panelFade:
+  - delay: 0.2
+    duration: 0.3
+    ease: 0
+    minValue: 0
+    maxValue: 1
+  panelPositionBack:
+  - delay: 0.1
+    duration: 0.5
+    ease: 13
+    minValue: {x: 0, y: 0}
+    maxValue: {x: 0, y: -1600}
+  panelFadeBack:
+  - delay: 0.2
+    duration: 0.3
+    ease: 0
+    minValue: 1
+    maxValue: 0
+  previewPosition: []
+  previewFade:
+  - delay: 0.4
+    duration: 0.2
+    ease: 0
+    minValue: 0
+    maxValue: 1
+  previewPositionBack: []
+  previewFadeBack:
+  - delay: 0
+    duration: 0.2
+    ease: 0
+    minValue: 1
+    maxValue: 0
+  backDuration: 0.7

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8634c5cf5896bb84ca6474552cf85648, type: 3}
+  m_Name: Audio Settings
+  m_EditorClassIdentifier: 
+  music:
+    gameMusic: {fileID: 8300000, guid: b8db484cdff6f844299d7ebff903f1ff, type: 3}
+  sounds:
+    buttonSound: {fileID: 8300000, guid: 8280a47b34e692b4e8a705f607c9c342, type: 3}
+    finishAudioClip: {fileID: 8300000, guid: 93b208079f77d3543bfc70eb5359b121, type: 3}
+    obstacleHitAudioClip: {fileID: 8300000, guid: b1346d6df6fe7404ca0d81cd641d9811,
+      type: 3}
+    drivingAwayAudioClip: {fileID: 8300000, guid: b4168ab4f7870a548a98f77d18469080,
+      type: 3}
+    finalCoinCollectClip: {fileID: 8300000, guid: ac1ae8bed6556954b84b22aa090e5566,
+      type: 3}
+    bounceSpawnAudioClip: {fileID: 8300000, guid: d37a042a077ec1243bb1828c5a9d94f6,
+      type: 3}
+    bounceHideAudioClip: {fileID: 8300000, guid: 5e5c19241cf71e9498e8c6aabd56f170,
+      type: 3}
+    hornShort: {fileID: 8300000, guid: 30b6a013dd47b1c4b8e515c27022aaaf, type: 3}
+    hornLong: {fileID: 8300000, guid: 59a0cfdaba4b9bc4fb7333901a8a1c15, type: 3}
+  vibrations:
+    shortVibration: 25
+    longVibration: 50

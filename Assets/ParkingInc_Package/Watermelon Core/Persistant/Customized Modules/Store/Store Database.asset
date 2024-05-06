@@ -1,0 +1,503 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8887268391466068701
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235c93656d24b8647ac686545054a3b7, type: 3}
+  m_Name: Car_02Product002
+  m_EditorClassIdentifier: 
+  id: 2
+  productName: Car_02
+  unlockedIcon: {fileID: 21300000, guid: 2045dc1249a4acf4e823e6a76089ce0b, type: 3}
+  lockedIcon: {fileID: 21300000, guid: 9917980745d7c104c9a8625530c6b065, type: 3}
+  previewSprite: {fileID: 21300000, guid: 2045dc1249a4acf4e823e6a76089ce0b, type: 3}
+  storeBackgroundColor: {r: 0.9960785, g: 0.86274517, b: 0.36862746, a: 1}
+  page: 0
+  type: 0
+  behaviourType: 0
+  isDefault: 0
+  movableGameObjects:
+  - {fileID: 1946383039968853058, guid: 154956d364bf68248babb42717a1ff6c, type: 3}
+  - {fileID: 1946383039968853058, guid: 82ecc33d6b444744e9adcf125c54fe83, type: 3}
+  - {fileID: 8770309061324832228, guid: 3a5d0f14dc0e55449bba1172d80c87fd, type: 3}
+--- !u!114 &-8574422052356948315
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b66fe2e39677145a6c9ee77dc9b674, type: 3}
+  m_Name: Environment_01Product010
+  m_EditorClassIdentifier: 
+  id: 10
+  productName: Environment_01
+  unlockedIcon: {fileID: 21300000, guid: 5976c44a3bff5744594ba72339472f22, type: 3}
+  lockedIcon: {fileID: 21300000, guid: 9917980745d7c104c9a8625530c6b065, type: 3}
+  previewSprite: {fileID: 21300000, guid: 5976c44a3bff5744594ba72339472f22, type: 3}
+  storeBackgroundColor: {r: 0.6784314, g: 0.6431373, b: 0.6313726, a: 1}
+  page: 0
+  type: 1
+  behaviourType: 0
+  isDefault: 1
+  skinPrefab: {fileID: 2642736487474812538, guid: da21dfea37c20004e9c24b9baf93366d,
+    type: 3}
+  obstaclePrefabs:
+  - {fileID: 8191157109634585222, guid: a7d067be245c1784ba2a6114008e2ae6, type: 3}
+  - {fileID: 1281339010254304699, guid: f40323f40fbf62f4fab4f5f8069311ae, type: 3}
+  - {fileID: 4118394410681701236, guid: bebfdaed37c8b0343a791a4da2db3a43, type: 3}
+  - {fileID: 6952938549770385397, guid: f8083888166a63c4eb4950b014367e77, type: 3}
+  - {fileID: 7448412601165027244, guid: 8788d19a46eb59e4290498eb2b7163f0, type: 3}
+  - {fileID: 7976437824940081560, guid: ace12095f85ab174ea905034055a0379, type: 3}
+--- !u!114 &-7458982450586098788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235c93656d24b8647ac686545054a3b7, type: 3}
+  m_Name: Car_07Product007
+  m_EditorClassIdentifier: 
+  id: 7
+  productName: Car_07
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 0
+  behaviourType: 1
+  isDefault: 0
+  movableGameObjects: []
+--- !u!114 &-6467541308770007518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235c93656d24b8647ac686545054a3b7, type: 3}
+  m_Name: Car_09Product009
+  m_EditorClassIdentifier: 
+  id: 9
+  productName: Car_09
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  page: 0
+  type: 0
+  behaviourType: 1
+  isDefault: 0
+  movableGameObjects: []
+--- !u!114 &-3967280535970639795
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235c93656d24b8647ac686545054a3b7, type: 3}
+  m_Name: Car_04Product004
+  m_EditorClassIdentifier: 
+  id: 4
+  productName: Car_04
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 0
+  behaviourType: 1
+  isDefault: 0
+  movableGameObjects: []
+--- !u!114 &-3907468310469760333
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235c93656d24b8647ac686545054a3b7, type: 3}
+  m_Name: Car_08Product008
+  m_EditorClassIdentifier: 
+  id: 8
+  productName: Car_08
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 0
+  behaviourType: 1
+  isDefault: 0
+  movableGameObjects: []
+--- !u!114 &-2656471185447466118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235c93656d24b8647ac686545054a3b7, type: 3}
+  m_Name: Car_05Product005
+  m_EditorClassIdentifier: 
+  id: 5
+  productName: Car_05
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 0
+  behaviourType: 1
+  isDefault: 0
+  movableGameObjects: []
+--- !u!114 &-1797747248869331717
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b66fe2e39677145a6c9ee77dc9b674, type: 3}
+  m_Name: TestProduct019
+  m_EditorClassIdentifier: 
+  id: 19
+  productName: Test
+  unlockedIcon: {fileID: 21300000, guid: cbefe1a7a3bbc7149b8857212040c042, type: 3}
+  lockedIcon: {fileID: 21300000, guid: f4c9aa0d77465ce42ab8b66be01ecd61, type: 3}
+  previewSprite: {fileID: 21300000, guid: f4c9aa0d77465ce42ab8b66be01ecd61, type: 3}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 1
+  type: 1
+  behaviourType: 0
+  isDefault: 0
+  skinPrefab: {fileID: 0}
+  obstaclePrefabs: []
+--- !u!114 &-1760485139230424348
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b66fe2e39677145a6c9ee77dc9b674, type: 3}
+  m_Name: Environment_09Product018
+  m_EditorClassIdentifier: 
+  id: 18
+  productName: Environment_09
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 1
+  behaviourType: 1
+  isDefault: 0
+  skinPrefab: {fileID: 0}
+  obstaclePrefabs: []
+--- !u!114 &-1022383138668961829
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b66fe2e39677145a6c9ee77dc9b674, type: 3}
+  m_Name: Environment_08Product017
+  m_EditorClassIdentifier: 
+  id: 17
+  productName: Environment_08
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 1
+  behaviourType: 1
+  isDefault: 0
+  skinPrefab: {fileID: 0}
+  obstaclePrefabs: []
+--- !u!114 &-81656400357744050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b66fe2e39677145a6c9ee77dc9b674, type: 3}
+  m_Name: Environment_07Product016
+  m_EditorClassIdentifier: 
+  id: 16
+  productName: Environment_07
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 1
+  behaviourType: 1
+  isDefault: 0
+  skinPrefab: {fileID: 0}
+  obstaclePrefabs: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8e5e70059ac5744a55ae636eb95cee, type: 3}
+  m_Name: Store Database
+  m_EditorClassIdentifier: 
+  products:
+  - {fileID: 2347778063576188773}
+  - {fileID: -8887268391466068701}
+  - {fileID: 4222958263629797163}
+  - {fileID: -3967280535970639795}
+  - {fileID: -2656471185447466118}
+  - {fileID: 6722463169926871771}
+  - {fileID: -7458982450586098788}
+  - {fileID: -3907468310469760333}
+  - {fileID: -6467541308770007518}
+  - {fileID: -8574422052356948315}
+  - {fileID: 4859736062571500635}
+  - {fileID: 7295923332840734142}
+  - {fileID: 7212016393019586361}
+  - {fileID: 4027520973706801605}
+  - {fileID: 1669991112641288715}
+  - {fileID: -81656400357744050}
+  - {fileID: -1022383138668961829}
+  - {fileID: -1760485139230424348}
+  characterSkinPrice: 500
+  environmentSkinPrice: 500
+  coinsForAdsAmount: 100
+--- !u!114 &1669991112641288715
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b66fe2e39677145a6c9ee77dc9b674, type: 3}
+  m_Name: Environment_06Product015
+  m_EditorClassIdentifier: 
+  id: 15
+  productName: Environment_06
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 1
+  behaviourType: 1
+  isDefault: 0
+  skinPrefab: {fileID: 0}
+  obstaclePrefabs: []
+--- !u!114 &2347778063576188773
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235c93656d24b8647ac686545054a3b7, type: 3}
+  m_Name: Car_01Product001
+  m_EditorClassIdentifier: 
+  id: 1
+  productName: Car_01
+  unlockedIcon: {fileID: 21300000, guid: 2045dc1249a4acf4e823e6a76089ce0b, type: 3}
+  lockedIcon: {fileID: 21300000, guid: 4a6c7403f82dff647bcf5c1f7b170a74, type: 3}
+  previewSprite: {fileID: 21300000, guid: 2045dc1249a4acf4e823e6a76089ce0b, type: 3}
+  storeBackgroundColor: {r: 0.9960785, g: 0.86274517, b: 0.36862746, a: 1}
+  page: 0
+  type: 0
+  behaviourType: 0
+  isDefault: 1
+  movableGameObjects:
+  - {fileID: 1946383039968853058, guid: 9a24d274cd16fb844aeae45c4519030c, type: 3}
+  - {fileID: 1946383039968853058, guid: 6f977666945965d41bdf66ff6abce3bb, type: 3}
+  - {fileID: 8770309061324832228, guid: 75ef31acb28ee9a42b065c9481addfff, type: 3}
+--- !u!114 &4027520973706801605
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b66fe2e39677145a6c9ee77dc9b674, type: 3}
+  m_Name: Environment_05Product014
+  m_EditorClassIdentifier: 
+  id: 14
+  productName: Environment_05
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 1
+  behaviourType: 1
+  isDefault: 0
+  skinPrefab: {fileID: 0}
+  obstaclePrefabs: []
+--- !u!114 &4222958263629797163
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235c93656d24b8647ac686545054a3b7, type: 3}
+  m_Name: Car_03Product003
+  m_EditorClassIdentifier: 
+  id: 3
+  productName: Car_03
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 0
+  behaviourType: 1
+  isDefault: 0
+  movableGameObjects: []
+--- !u!114 &4859736062571500635
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b66fe2e39677145a6c9ee77dc9b674, type: 3}
+  m_Name: Environment_02Product011
+  m_EditorClassIdentifier: 
+  id: 11
+  productName: Environment_02
+  unlockedIcon: {fileID: 21300000, guid: 5976c44a3bff5744594ba72339472f22, type: 3}
+  lockedIcon: {fileID: 21300000, guid: 4a6c7403f82dff647bcf5c1f7b170a74, type: 3}
+  previewSprite: {fileID: 21300000, guid: 5976c44a3bff5744594ba72339472f22, type: 3}
+  storeBackgroundColor: {r: 0.6784314, g: 0.6431373, b: 0.6313726, a: 1}
+  page: 0
+  type: 1
+  behaviourType: 0
+  isDefault: 0
+  skinPrefab: {fileID: 2642736487474812538, guid: ed69deb05dcc22f46af21dd6814b4051,
+    type: 3}
+  obstaclePrefabs:
+  - {fileID: 8191157109634585222, guid: 17cb281f9b750b445a886e4ee674c6ad, type: 3}
+  - {fileID: 1281339010254304699, guid: 421f5fc1a37c8d741a7d1d65b77dc45c, type: 3}
+  - {fileID: 4118394410681701236, guid: b5316c38afd382347b2c92a7e8a54ef3, type: 3}
+  - {fileID: 6952938549770385397, guid: d81911711b8a62c4f8783395e1028670, type: 3}
+  - {fileID: 7448412601165027244, guid: a49d39d10dd951947929a43cfc9e6cc1, type: 3}
+  - {fileID: 7976437824940081560, guid: 11cf83e60b8d0584cb1074fec98dea65, type: 3}
+--- !u!114 &6722463169926871771
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235c93656d24b8647ac686545054a3b7, type: 3}
+  m_Name: Car_06Product006
+  m_EditorClassIdentifier: 
+  id: 6
+  productName: Car_06
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 0
+  behaviourType: 1
+  isDefault: 0
+  movableGameObjects: []
+--- !u!114 &7212016393019586361
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b66fe2e39677145a6c9ee77dc9b674, type: 3}
+  m_Name: Environment_04Product013
+  m_EditorClassIdentifier: 
+  id: 13
+  productName: Environment_04
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 1
+  behaviourType: 1
+  isDefault: 0
+  skinPrefab: {fileID: 0}
+  obstaclePrefabs: []
+--- !u!114 &7295923332840734142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b66fe2e39677145a6c9ee77dc9b674, type: 3}
+  m_Name: Environment_03Product012
+  m_EditorClassIdentifier: 
+  id: 12
+  productName: Environment_03
+  unlockedIcon: {fileID: 0}
+  lockedIcon: {fileID: 21300000, guid: d088c4549ad829e46ab72337d1794a0b, type: 3}
+  previewSprite: {fileID: 0}
+  storeBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  page: 0
+  type: 1
+  behaviourType: 1
+  isDefault: 0
+  skinPrefab: {fileID: 0}
+  obstaclePrefabs: []

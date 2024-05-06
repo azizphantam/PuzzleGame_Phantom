@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Key
+  - WorldSpaceButton
+  - Floor
+  - CoinsGatherPoint
+  - Arrow Sign
+  - Traffic Light
+  - Building 3
+  - Campfire
+  - Timber Axe
+  - Windmill
   layers:
   - Default
   - TransparentFX
@@ -13,12 +23,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Movable
+  - Obstacle
+  - WorldSpaceButton
+  - CoinsSystem
+  - Coin
+  - EnvironmentProp
   - 
   - 
   - 
@@ -40,4 +50,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: WorldSpace
+    uniqueID: 4179796161
     locked: 0
