@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Building:
   - buildings:
-    - {fileID: 2134124989640836844, guid: 1d3404343e8f223498ac39c5e8646098, type: 3}
+    - {fileID: 6931491181069719020, guid: 84c27de9b96061449800456b58b9ab1a, type: 3}
     isused: 0
   - buildings:
-    - {fileID: 8764906795189377199, guid: a329aa7136bdbfa408a3c201f82cb31a, type: 3}
+    - {fileID: 4668761780014500670, guid: 5195f8b57ec25124eb5b458ae635625a, type: 3}
     isused: 0
   - buildings:
-    - {fileID: 359799917510448018, guid: c84dcb4a393804b488ede63df53aeb61, type: 3}
+    - {fileID: 6984130975669797762, guid: f8e471ff3f6160943b393752258361a9, type: 3}
     isused: 0
   - buildings:
-    - {fileID: 1028156590386054526, guid: 3c723a12ccf259e45a37115c62a18dc2, type: 3}
+    - {fileID: 4737723785715441802, guid: 161d6ff7ee15ada43a8925b3d30086f0, type: 3}
     isused: 0
