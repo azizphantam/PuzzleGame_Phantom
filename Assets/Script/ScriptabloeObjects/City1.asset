@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: City1
   m_EditorClassIdentifier: 
   Building:
-  - Buildings:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  - Buildings:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  - Buildings:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+  - buildings:
+    - {fileID: 6983852941134221793, guid: fe63ad22bb4679445af5bdf4a6d1470d, type: 3}
+    isused: 0
+  - buildings:
+    - {fileID: 8154235786447094070, guid: 8e19266ad2ec8ba408184566eef2cd2c, type: 3}
+    isused: 0
+  - buildings:
+    - {fileID: 2683802914378454114, guid: b6763c1a0691b294ab1ee7bd0e9e6e2e, type: 3}
+    isused: 0
+  - buildings:
+    - {fileID: 5047582340462571906, guid: 24d06911a04eff54b9a9cdc45c994efa, type: 3}
+    isused: 0
