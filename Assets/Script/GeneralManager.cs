@@ -14,12 +14,13 @@ namespace Script
 
     public class GeneralManager : MonoBehaviour
     {
+        
         public DifferentCities[] Cities;
 
         public List<Positions> buildingpos = new();
         private int CityNumber;
         public Camera cam;
-        private int _CamCurrentIndex;
+
         public List<Transform> CamPositions;
         public void SelectCity(int User_Select_City)
         {

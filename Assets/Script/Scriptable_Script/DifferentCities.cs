@@ -7,9 +7,6 @@ public struct DifferentBuiding
     public List<GameObject> buildings;
     public bool isused;
 }
-
-
-
 [CreateAssetMenu(fileName = "Buildings", menuName = "MakeBuildings", order = 0)] 
 public class DifferentCities : ScriptableObject
 {
