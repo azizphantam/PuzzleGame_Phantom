@@ -36,12 +36,12 @@ namespace Script
 
         public void moveGamePLay()
         {
-            cam.transform.DOMove(CamPositions[0].transform.position, 5);
+            cam.transform.DOLocalMove(CamPositions[0].transform.position, 5);
         }
 
         public void moveMakeBuildings()
         {
-            cam.transform.DOMove(CamPositions[1].transform.position, 5);
+            cam.transform.DOLocalMove(CamPositions[1].transform.position, 5);
         }
         public void OnButtonClickBuilding(int buildNumber)
         {

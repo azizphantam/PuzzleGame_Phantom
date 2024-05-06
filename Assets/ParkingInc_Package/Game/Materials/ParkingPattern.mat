@@ -80,7 +80,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
-    - _BlendCoef: 1
+    - _BlendCoef: 0
     - _BumpScale: 1
     - _Cull: 2
     - _Cutoff: 0.5
@@ -114,7 +114,7 @@ Material:
     - _RampMax: {r: 1, g: 1, b: 1, a: 1}
     - _RampMin: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Tiling: {r: 6, g: 1, b: 0, a: 0}
+    - _Tiling: {r: 4, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5889187052027167592
 MonoBehaviour:
