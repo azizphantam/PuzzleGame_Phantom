@@ -56,7 +56,7 @@ public class MovableController : MonoBehaviour
 
     private MaterialPropertyBlock propertyBlock;
     private List<Vector3> blockedDirections = new List<Vector3>();
-
+    private Animator _player;
     void Awake()
     {
         propertyBlock = new MaterialPropertyBlock();
@@ -66,12 +66,21 @@ public class MovableController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-
+        _player = gameObject.GetComponentInChildren<Animator>();
+       
         IsTilting = false;
         isCollisionMovement = false;
         IsWaitingForOtherCarToPass = false;
+       
     }
 
+    private void  Walkanimation(bool iswalk)
+    {
+       if(iswalk) 
+           _player.SetBool("Walk",true);
+       else if(!iswalk)
+           _player.SetBool("Walk",false);
+    }
     public void SetInteractable(bool interactable)
     {
         if (IsInteractable == interactable)
@@ -280,10 +289,15 @@ public class MovableController : MonoBehaviour
     private void FixedUpdate()
     {
         if (!isMoving)
+        {
+            Walkanimation(false);
             return;
 
+        }
+           
         if (speed < maxSpeed)
         {
+            Walkanimation(true);
             speed += acceleration * Time.fixedDeltaTime;
             if (speed > maxSpeed)
                 speed = maxSpeed;
