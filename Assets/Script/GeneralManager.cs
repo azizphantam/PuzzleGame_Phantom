@@ -14,13 +14,20 @@ namespace Script
 
     public class GeneralManager : MonoBehaviour
     {
-        
+        [Header("Cities Scriptable Objects")]
         public DifferentCities[] Cities;
-
+        [Space]
+        [Header("Building Positions for Spawn")]
         public List<Positions> buildingpos = new();
+        [Space]
         private int CityNumber;
+        [Header("Camera for Move")]
         public Camera cam;
-
+        [Space]
+        [Header("Camera delay for  Move")]
+        public int Cam_Movement_Delay;
+        [Space]
+        [Header("Camera Positions for Gameplay and Make Buildings")]
         public List<Transform> CamPositions;
         public void SelectCity(int User_Select_City)
         {
@@ -29,12 +36,12 @@ namespace Script
 
         public void moveGamePLay()
         {
-            cam.transform.DOLocalMove(CamPositions[0].transform.position, 5);
+            cam.transform.DOMove(CamPositions[0].transform.position, 5);
         }
 
         public void moveMakeBuildings()
         {
-            cam.transform.DOLocalMove(CamPositions[1].transform.position, 5);
+            cam.transform.DOMove(CamPositions[1].transform.position, 5);
         }
         public void OnButtonClickBuilding(int buildNumber)
         {
