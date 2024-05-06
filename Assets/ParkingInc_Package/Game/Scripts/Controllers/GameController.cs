@@ -59,13 +59,13 @@ public class GameController : MonoBehaviour
 
     private void OnEnable()
     {
-        AdsManager.ExtraInterstitialReadyConditions += ExtraInterstitialCondition;
+      
         StoreController.OnProductSelected += OnProductSelected;
     }
     
     private void OnDisable()
     {
-        AdsManager.ExtraInterstitialReadyConditions -= ExtraInterstitialCondition;
+        
         StoreController.OnProductSelected -= OnProductSelected;
     }
 
@@ -113,7 +113,7 @@ public class GameController : MonoBehaviour
 
     public static void NextLevel(bool withTransition = true)
     {
-        AdsManager.ShowInterstitial((isDisplayed) =>
+        /*AdsManager.ShowInterstitial((isDisplayed) =>
         {
             if (isDisplayed)
             {
@@ -123,7 +123,7 @@ public class GameController : MonoBehaviour
             {
                 CalculateNextLevel(withTransition);
             }
-        });
+        });*/
     }
 
     private static void CalculateNextLevel(bool withTransition)

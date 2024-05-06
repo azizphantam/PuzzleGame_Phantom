@@ -48,7 +48,7 @@ namespace Watermelon
 
                 IsStartInitialized = true;
 
-                AdsManager.TryToLoadFirstAds();
+                /*AdsManager.TryToLoadFirstAds();*/
             }
             else
             {

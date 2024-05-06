@@ -711,7 +711,7 @@ namespace Watermelon
             CoinsPanelTransform.DOScale(0.5f, 0.3f).SetEasing(Ease.Type.BackIn).OnComplete(() => CoinsPanelTransform.DOScale(0, 0.2f));
             Tween.DelayedCall(AnimationConfig.BackDuration, () => {
                 StoreCanvas.enabled = false;
-                if(AdsManager.IsForcedAdEnabled()) AdsManager.ShowBanner();
+                /*if(AdsManager.IsForcedAdEnabled()) AdsManager.ShowBanner();*/
             });
 
             CloseButton.enabled = false;

@@ -15,10 +15,10 @@ public class NoAdsButton : MonoBehaviour
 
     void Start()
     {
-        if (!AdsManager.IsForcedAdEnabled())
+        /*if (!AdsManager.IsForcedAdEnabled())
         {
             gameObject.SetActive(false);
-        }
+        }*/
     }
 
     public static void Disable()

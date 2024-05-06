@@ -8,19 +8,20 @@ namespace Watermelon
     {
         public override bool IsActive()
         {
-            AdsData adsSettings;
+            /*AdsData adsSettings;
 #if UNITY_EDITOR
             adsSettings = RuntimeEditorUtils.GetAssetByName<AdsData>("Ads Settings");
 #else
             adsSettings = AdsManager.Settings;
 #endif
 
-            return adsSettings.IsGDPREnabled;
+            return adsSettings.IsGDPREnabled;*/
+            return true;
         }
 
         public override void OnClick()
         {
-            GDPRPanel.OpenWindow();
+            //GDPRPanel.OpenWindow();
 
             // Play button sound
             AudioController.PlaySound(AudioController.Sounds.buttonSound);

@@ -146,7 +146,7 @@ public class EnvironmentController : MonoBehaviour
     
     public void GetX3Click()
     {
-        AdsManager.ShowRewardBasedVideo((bool finished) => 
+        /*AdsManager.ShowRewardBasedVideo((bool finished) => 
         {
             if (finished)
             {
@@ -165,7 +165,7 @@ public class EnvironmentController : MonoBehaviour
                 GameController.NextLevel();
                 
             }
-        });
+        });*/
     }
 
     public void CollectCoins()
