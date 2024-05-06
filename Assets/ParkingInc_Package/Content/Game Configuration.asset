@@ -16,11 +16,11 @@ MonoBehaviour:
   acceleration: 50
   collisionData:
   - easeFunction: 1
-    duration: 0.1
+    duration: 2
     offset: 20
   - easeFunction: 15
-    duration: 0.1
+    duration: 2
     offset: -10
   - easeFunction: 13
-    duration: 0.1
+    duration: 2
     offset: 0
