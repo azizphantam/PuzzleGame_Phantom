@@ -52,6 +52,8 @@ namespace Script
         public GameObject WarningMessage;
         [Space]
         public TMP_Text starscount;
+
+        [Space] public TMP_Text starsRequired_forBuilding;
         private void Awake()
         {
             instance = this;
@@ -85,6 +87,7 @@ namespace Script
 
         private void  Appear_UI_Instructions()
         {
+            
             for (int i = 0; i < 4; i++)
             {
                 /*if (Cities[0].Building[i].isused == 0)
@@ -97,6 +100,7 @@ namespace Script
                     current_BuilingMake = i;
                     break;
                 }
+                starsRequired_forBuilding.text = "Stars Required :"+Cities[0].Building[current_BuilingMake].Stars_Required.ToString();
             }
             Instruction_Panel.SetActive(true);
             Buiding_Names.text = Cities[0].Building[current_BuilingMake].Building_Name;
@@ -107,6 +111,7 @@ namespace Script
 
         public void OnButtonClickBuilding()
         {
+            
             if(PlayerPrefs.GetInt("Stars") < Cities[0].Building[current_BuilingMake].Stars_Required)
             {
                 WarningMessage.SetActive(true);
