@@ -1,7 +1,11 @@
 
-using System.Collections.Generic;
-using UnityEngine;
 using DG.Tweening;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using Unity.Entities.UniversalDelegates;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Script
 {
@@ -29,33 +33,82 @@ namespace Script
         [Space]
         [Header("Camera Positions for Gameplay and Make Buildings")]
         public List<Transform> CamPositions;
-        public void SelectCity(int User_Select_City)
+        [Space]
+        [Header("instructions Panel")]
+        public GameObject Instruction_Panel;
+        
+        [Space]
+        [Header("Building Names")]
+        public TMP_Text Buiding_Names;
+        [Space]
+        [Header("Building Description")]
+        public TMP_Text Buiding_Description;
+        [Space]
+        private int current_BuilingMake = 0;
+        [Space]
+        public List<GameObject> Main_btns; // gameplay buttons and make buildings buttons ....[0] make building button [1] play game button
+
+
+        private void Start()
         {
-            CityNumber = User_Select_City;
+            Main_btns[0].SetActive(true);
+            Main_btns[1].SetActive(false);
+
+            if (Cities[0].Building[0].isused == 0)
+            {
+                Cities[0].Building[0].isused = 1;
+            }
+            moveMakeBuildings();
         }
 
         public void moveGamePLay()
         {
             cam.transform.DOMove(CamPositions[0].transform.position, 10);
+            Main_btns[0].SetActive(true);
+            Main_btns[1].SetActive(false);
+            Instruction_Panel.SetActive(false);
         }
 
         public void moveMakeBuildings()
         {
-            cam.transform.DOMove(CamPositions[1].transform.position, 10);
+            cam.transform.DOMove(CamPositions[1].transform.position, 10).OnComplete(() => Appear_UI_Instructions());
+            Main_btns[0].SetActive(false);
+            Main_btns[1].SetActive(true);
         }
-        public void OnButtonClickBuilding(int buildNumber)
+        
+
+        private void  Appear_UI_Instructions()
         {
-            BuildingPositions(buildNumber);
+            for (int i = 0; i < 4; i++)
+            {
+                if (Cities[0].Building[i].isused == 0)
+                {
+                    current_BuilingMake = i;
+                    break;
+                }
+            }
+            Instruction_Panel.SetActive(true);
+            Buiding_Names.text = Cities[0].Building[current_BuilingMake].Building_Name;
+            Buiding_Description.text = Cities[0].Building[current_BuilingMake].Building_Description;
+        }
+
+
+
+        public void OnButtonClickBuilding()
+        {
+            BuildingPositions(current_BuilingMake);
             
         }
 
         
         private void BuildingPositions(int building_number)
         {
-            Instantiate(Cities[CityNumber].Building[building_number].buildings[0],
-                buildingpos[CityNumber].differentPositions[building_number].transform.position, Quaternion.identity);
-            //we save this value so we can interactable false in start of game 
-            Cities[0].Building[0].isused.Equals(true);
+           GameObject buildings =  Instantiate(Cities[0].Building[building_number].buildings[0],
+                buildingpos[0].differentPositions[building_number].transform.position, Quaternion.identity);
+
+            buildings.transform.DOScale(1, .5f).SetEase(Ease.InOutBounce);
+
+
         }
 
        
