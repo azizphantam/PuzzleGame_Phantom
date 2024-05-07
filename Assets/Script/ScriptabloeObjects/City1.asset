@@ -15,7 +15,7 @@ MonoBehaviour:
   Building:
   - buildings:
     - {fileID: 6766478264694350137, guid: 2cc346759b14d4d46a191ec4e5a4d7e2, type: 3}
-    isused: 0
+    isused: 1
     Stars_Required: 1
     Building_Description: this is school building many student stuck there..Please
       help them..

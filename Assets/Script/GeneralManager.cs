@@ -54,10 +54,7 @@ namespace Script
             Main_btns[0].SetActive(true);
             Main_btns[1].SetActive(false);
 
-            if (Cities[0].Building[0].isused == 0)
-            {
-                Cities[0].Building[0].isused = 1;
-            }
+            
             moveMakeBuildings();
         }
 
@@ -97,7 +94,7 @@ namespace Script
         public void OnButtonClickBuilding()
         {
             BuildingPositions(current_BuilingMake);
-            
+            Instruction_Panel.SetActive(false);
         }
 
         
@@ -106,7 +103,7 @@ namespace Script
            GameObject buildings =  Instantiate(Cities[0].Building[building_number].buildings[0],
                 buildingpos[0].differentPositions[building_number].transform.position, Quaternion.identity);
 
-            buildings.transform.DOScale(1, .5f).SetEase(Ease.InOutBounce);
+            buildings.transform.DOScale(1, 1).SetEase(Ease.InOutBounce);
 
 
         }
