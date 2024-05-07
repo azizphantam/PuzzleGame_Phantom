@@ -18,6 +18,7 @@ namespace Script
 
     public class GeneralManager : MonoBehaviour
     {
+        public static GeneralManager instance;
         [Header("Cities Scriptable Objects")]
         public DifferentCities[] Cities;
         [Space]
@@ -47,30 +48,38 @@ namespace Script
         private int current_BuilingMake = 0;
         [Space]
         public List<GameObject> Main_btns; // gameplay buttons and make buildings buttons ....[0] make building button [1] play game button
-
-
+        [Space]
+        public GameObject WarningMessage;
+        [Space]
+        public TMP_Text starscount;
+        private void Awake()
+        {
+            instance = this;
+        }
         private void Start()
         {
-            Main_btns[0].SetActive(true);
-            Main_btns[1].SetActive(false);
+           
 
-            
-            moveMakeBuildings();
+            Stars();
+
+           
         }
-
+        public void Stars()
+        {
+            starscount.text = "Stars :"+PlayerPrefs.GetInt("Stars").ToString();
+        }
         public void moveGamePLay()
         {
-            cam.transform.DOMove(CamPositions[0].transform.position, 10);
-            Main_btns[0].SetActive(true);
-            Main_btns[1].SetActive(false);
+            cam.transform.DOMove(CamPositions[0].transform.position, 5);
+            //Move_Gameplay_MakeBuilding(0);
             Instruction_Panel.SetActive(false);
+            WarningMessage.SetActive(false);
         }
 
         public void moveMakeBuildings()
         {
-            cam.transform.DOMove(CamPositions[1].transform.position, 10).OnComplete(() => Appear_UI_Instructions());
-            Main_btns[0].SetActive(false);
-            Main_btns[1].SetActive(true);
+            cam.transform.DOMove(CamPositions[1].transform.position, 5).OnComplete(Appear_UI_Instructions);
+           // Move_Gameplay_MakeBuilding(1);
         }
         
 
@@ -78,7 +87,12 @@ namespace Script
         {
             for (int i = 0; i < 4; i++)
             {
-                if (Cities[0].Building[i].isused == 0)
+                /*if (Cities[0].Building[i].isused == 0)
+                {
+                    current_BuilingMake = i;
+                    break;
+                }*/
+                if (i == PlayerPrefs.GetInt("TotalBuildingDone"))
                 {
                     current_BuilingMake = i;
                     break;
@@ -93,10 +107,34 @@ namespace Script
 
         public void OnButtonClickBuilding()
         {
-            BuildingPositions(current_BuilingMake);
-            Instruction_Panel.SetActive(false);
+            if(PlayerPrefs.GetInt("Stars") < Cities[0].Building[current_BuilingMake].Stars_Required)
+            {
+                WarningMessage.SetActive(true);
+
+            }
+            else
+            {
+                BuildingPositions(current_BuilingMake);
+                PlayerPrefs.SetInt("Stars",PlayerPrefs.GetInt("Stars")-Cities[0].Building[current_BuilingMake].Stars_Required);
+                Stars();
+                Instruction_Panel.SetActive(false);
+            }
+            
         }
 
+        private void Move_Gameplay_MakeBuilding(int game_moves)
+        {
+            if (game_moves == 0)
+            {
+                Main_btns[0].SetActive(true);
+                Main_btns[1].SetActive(false);
+            }
+            else
+            {
+                Main_btns[0].SetActive(false);
+                Main_btns[1].SetActive(true);
+            }
+        }
         
         private void BuildingPositions(int building_number)
         {
@@ -104,7 +142,7 @@ namespace Script
                 buildingpos[0].differentPositions[building_number].transform.position, Quaternion.identity);
 
             buildings.transform.DOScale(1, 1).SetEase(Ease.InOutBounce);
-
+            PlayerPrefs.SetInt("TotalBuildingDone",PlayerPrefs.GetInt("TotalBuildingDone") + 1);
 
         }
 

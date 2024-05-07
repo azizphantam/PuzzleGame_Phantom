@@ -66,7 +66,7 @@ public class MovableController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        _player = gameObject.GetComponentInChildren<Animator>();
+      //  _player = gameObject.GetComponentInChildren<Animator>();
        
         IsTilting = false;
         isCollisionMovement = false;
@@ -74,13 +74,13 @@ public class MovableController : MonoBehaviour
        
     }
 
-    private void  Walkanimation(bool iswalk)
+    /*private void  Walkanimation(bool iswalk)
     {
        if(iswalk) 
            _player.SetBool("Walk",true);
        else if(!iswalk)
            _player.SetBool("Walk",false);
-    }
+    }*/
     public void SetInteractable(bool interactable)
     {
         if (IsInteractable == interactable)
@@ -290,14 +290,14 @@ public class MovableController : MonoBehaviour
     {
         if (!isMoving)
         {
-            Walkanimation(false);
+          //  Walkanimation(false);
             return;
 
         }
            
         if (speed < maxSpeed)
         {
-            Walkanimation(true);
+            //Walkanimation(true);
             speed += acceleration * Time.fixedDeltaTime;
             if (speed > maxSpeed)
                 speed = maxSpeed;

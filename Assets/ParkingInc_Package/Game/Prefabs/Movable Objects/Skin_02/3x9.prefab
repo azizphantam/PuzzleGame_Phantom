@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &344034571654193183
 Transform:
   m_ObjectHideFlags: 0
@@ -140,8 +140,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.374487, y: 3.394135, z: 1.9369485}
-  m_Center: {x: 0.05255127, y: 1.6970675, z: 0.275895}
+  m_Size: {x: 3.543337, y: 3.394135, z: 8.19723}
+  m_Center: {x: 0.0030237436, y: 1.6970675, z: 0.018352032}
 --- !u!114 &8676226314686954729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,6 +379,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ch_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778241889073159582, guid: f89db097eb2409346a26516a905086aa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -145,7 +145,7 @@ public class LevelController : MonoBehaviour
         UITouchHandler.Enabled = false;
         instance.StartCoroutine(LevelObjectsSpawner.HideBounceObstacles());
         Environment.BlendToClear();
-
+        PlayerPrefs.SetInt("Stars",PlayerPrefs.GetInt("Stars")+1);
         int coinsAmount = CurrentLevel.MovableObjects.Length * 2;
         if (coinsAmount < 15) coinsAmount = 14 + GameController.CurrentLevelId % 2;
         if (coinsAmount > 25) coinsAmount = 24 + GameController.CurrentLevelId % 2;
