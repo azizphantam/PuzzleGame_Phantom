@@ -80,6 +80,7 @@ namespace Script
 
         public void moveMakeBuildings()
         {
+            starsRequired_forBuilding.text = "Stars Required :"+Cities[0].Building[PlayerPrefs.GetInt("TotalBuildingDone")].Stars_Required;
             cam.transform.DOMove(CamPositions[1].transform.position, 5).OnComplete(Appear_UI_Instructions);
            // Move_Gameplay_MakeBuilding(1);
         }
@@ -100,7 +101,7 @@ namespace Script
                     current_BuilingMake = i;
                     break;
                 }
-                starsRequired_forBuilding.text = "Stars Required :"+Cities[0].Building[current_BuilingMake].Stars_Required.ToString();
+                
             }
             Instruction_Panel.SetActive(true);
             Buiding_Names.text = Cities[0].Building[current_BuilingMake].Building_Name;
@@ -115,7 +116,7 @@ namespace Script
             if(PlayerPrefs.GetInt("Stars") < Cities[0].Building[current_BuilingMake].Stars_Required)
             {
                 WarningMessage.SetActive(true);
-
+                StartCoroutine(nameof(MoveGAmePlay));
             }
             else
             {
@@ -127,6 +128,12 @@ namespace Script
             
         }
 
+        IEnumerator MoveGAmePlay()
+        {
+            yield return new WaitForSeconds(2);
+            moveGamePLay();
+
+        }
         private void Move_Gameplay_MakeBuilding(int game_moves)
         {
             if (game_moves == 0)
@@ -146,7 +153,7 @@ namespace Script
            GameObject buildings =  Instantiate(Cities[0].Building[building_number].buildings[0],
                 buildingpos[0].differentPositions[building_number].transform.position, Quaternion.identity);
 
-            buildings.transform.DOScale(1, 1).SetEase(Ease.InOutBounce);
+            buildings.transform.DOScale(2, 1.5f).SetEase(Ease.InOutBounce);
             PlayerPrefs.SetInt("TotalBuildingDone",PlayerPrefs.GetInt("TotalBuildingDone") + 1);
 
         }
