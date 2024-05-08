@@ -114,6 +114,8 @@ public class GameController : MonoBehaviour
     public static void NextLevel(bool withTransition = true)
     {
         CalculateNextLevel(withTransition);
+        GameLoose.intance.RestartTimer();
+
         /*AdsManager.ShowInterstitial((isDisplayed) =>
         {
             if (isDisplayed)

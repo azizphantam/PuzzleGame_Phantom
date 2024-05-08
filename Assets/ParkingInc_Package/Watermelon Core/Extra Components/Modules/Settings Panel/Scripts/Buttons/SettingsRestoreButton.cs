@@ -15,7 +15,7 @@ namespace Watermelon
 
         public override void OnClick()
         {
-            IAPManager.RestorePurchases();
+            //IAPManager.RestorePurchases();
 
             // Play button sound
             AudioController.PlaySound(AudioController.Sounds.buttonSound);

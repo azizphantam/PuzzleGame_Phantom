@@ -43,7 +43,7 @@ public class GameAudioController : MonoBehaviour
 #if MODULE_VIBRATION
         MMVibrationManager.Haptic(HapticTypes.LightImpact, true);
 #else
-        Vibration.Vibrate(AudioController.Vibrations.shortVibration);
+        //Vibration.Vibrate(AudioController.Vibrations.shortVibration);
 #endif
     }
 
@@ -54,7 +54,7 @@ public class GameAudioController : MonoBehaviour
 #if MODULE_VIBRATION
         MMVibrationManager.Haptic(HapticTypes.Success, true);
 #else
-        Vibration.Vibrate(AudioController.Vibrations.longVibration);
+       // Vibration.Vibrate(AudioController.Vibrations.longVibration);
 #endif
     }
 
