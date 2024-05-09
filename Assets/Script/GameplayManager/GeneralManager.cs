@@ -103,7 +103,7 @@ namespace Script
 
         public void MoveCam_OnEachBuilding()
         {
-            int buildingclose_pos = PlayerPrefs.GetInt("TotalBuildingDone");
+            int buildingclose_pos = PlayerPrefs.GetInt("TotalBuildingDone"); //temp make variable we will change it later
             cam.transform.DOMove(buildingpos[0].differentPositions[buildingclose_pos].GetChild(0).transform.position, 5).OnComplete(Appear_UI_Instructions);
             cam.transform.DORotate(new Vector3(40,0,0), 1).SetDelay(.5f);
            
