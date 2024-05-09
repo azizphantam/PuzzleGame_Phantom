@@ -62,8 +62,10 @@ namespace Script
 
         public void MoveBuildingScreen()
         {
-            cam.transform.DOMove(CamPositions[1].transform.position, 5).OnComplete(FirstNarration);;
+            cam.transform.DOMove(CamPositions[1].transform.position, 5).OnComplete(FirstNarration);
+            ;
         }
+
         public void Stars()
         {
             starscount.text = "Stars :" + PlayerPrefs.GetInt("Stars");
@@ -81,6 +83,7 @@ namespace Script
             FirstTimeNarration.SetActive(false);
             moveGamePLay();
         }
+
         public void moveGamePLay()
         {
             cam.transform.DOMove(CamPositions[0].transform.position, 5);
@@ -88,7 +91,7 @@ namespace Script
             Instruction_Panel.SetActive(false);
             WarningMessage.SetActive(false);
         }
-        
+
         public void moveMakeBuildings()
         {
             starsRequired_forBuilding.text = "Stars Required :" +
@@ -97,6 +100,10 @@ namespace Script
             // Move_Gameplay_MakeBuilding(1);
         }
 
+        public void MoveCam_OnEachBuilding()
+        {
+            
+        }
 
         private void Appear_UI_Instructions()
         {
