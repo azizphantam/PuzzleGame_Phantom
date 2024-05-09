@@ -88,6 +88,7 @@ namespace Script
         {
             cam.transform.DOMove(CamPositions[0].transform.position, 5);
             //Move_Gameplay_MakeBuilding(0);
+            cam.transform.DORotate(new Vector3(60,-10,0), 1).SetDelay(.5f);
             Instruction_Panel.SetActive(false);
             WarningMessage.SetActive(false);
         }
@@ -96,13 +97,16 @@ namespace Script
         {
             starsRequired_forBuilding.text = "Stars Required :" +
                                              Cities[0].Building[PlayerPrefs.GetInt("TotalBuildingDone")].Stars_Required;
-            cam.transform.DOMove(CamPositions[1].transform.position, 5).OnComplete(Appear_UI_Instructions);
+            cam.transform.DOMove(CamPositions[1].transform.position, 7).OnComplete(MoveCam_OnEachBuilding);
             // Move_Gameplay_MakeBuilding(1);
         }
 
         public void MoveCam_OnEachBuilding()
         {
-            
+            int buildingclose_pos = PlayerPrefs.GetInt("TotalBuildingDone");
+            cam.transform.DOMove(buildingpos[0].differentPositions[buildingclose_pos].GetChild(0).transform.position, 5).OnComplete(Appear_UI_Instructions);
+            cam.transform.DORotate(new Vector3(40,0,0), 1).SetDelay(.5f);
+           
         }
 
         private void Appear_UI_Instructions()
