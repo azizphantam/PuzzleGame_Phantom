@@ -61,7 +61,7 @@ namespace Script
 
         public void MoveBuildingScreen()
         {
-            cam.transform.DOMove(CamPositions[1].transform.position, 5);
+            cam.transform.DOMove(CamPositions[1].transform.position, 5).OnComplete(moveGamePLay);;
         }
         public void Stars()
         {
