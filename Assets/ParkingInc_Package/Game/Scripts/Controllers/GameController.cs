@@ -216,7 +216,7 @@ public class GameController : MonoBehaviour
     public static void FinishLevel()
     {
         WinStage = true;
-
+        GameLoose.intance.StopTimer();
         GameAudioController.VibrateLevelFinish();
     }
 

@@ -47,6 +47,7 @@ namespace Script
         [Space] public TMP_Text starscount;
 
         [Space] public TMP_Text starsRequired_forBuilding;
+        [Space] public GameObject FirstTimeNarration;
 
         private void Awake()
         {
@@ -61,13 +62,25 @@ namespace Script
 
         public void MoveBuildingScreen()
         {
-            cam.transform.DOMove(CamPositions[1].transform.position, 5).OnComplete(moveGamePLay);;
+            cam.transform.DOMove(CamPositions[1].transform.position, 5).OnComplete(FirstNarration);;
         }
         public void Stars()
         {
-            starscount.text = "Stars :" + PlayerPrefs.GetInt("Stars").ToString();
+            starscount.text = "Stars :" + PlayerPrefs.GetInt("Stars");
         }
 
+        public void FirstNarration()
+        {
+            FirstTimeNarration.SetActive(true);
+            StartCoroutine(nameof(movegamefirstnarration));
+        }
+
+        IEnumerator movegamefirstnarration()
+        {
+            yield return new WaitForSeconds(3);
+            FirstTimeNarration.SetActive(false);
+            moveGamePLay();
+        }
         public void moveGamePLay()
         {
             cam.transform.DOMove(CamPositions[0].transform.position, 5);

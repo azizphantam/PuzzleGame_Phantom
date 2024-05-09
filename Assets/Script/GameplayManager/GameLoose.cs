@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class GameLoose : MonoBehaviour
 {
     public static GameLoose intance;
-    public float timeLeft = 30.0f; // Initial time in seconds
+    public float timeLeft = 60.0f; // Initial time in seconds
     private bool timerRunning = true;
 
     public GameObject LooseCanvas;
@@ -46,11 +46,15 @@ public class GameLoose : MonoBehaviour
         }
     }
 
+    public void StopTimer()
+    {
+        StopCoroutine(Countdown());
+    }
     public void RestartTimer()
     {
-        timeLeft = 30.0f;
+        timeLeft = 60.0f;
         timerRunning = true;
-        TimerSlider.value = 30.0f;
+        TimerSlider.value = 60.0f;
     }
 
     public void ReplayLevel()
